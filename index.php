@@ -15,7 +15,7 @@
 </section>
 <section class="advantages">
 	<div class="container">
-		<h2>Подгузники для малышей <span class="star"><img src="/assets/images/star.svg" alt="" /></span> премиум-класс качества, который обеспечивает комфорт и защиту <span class="violet__color">вашему</span> малышу</h2>
+		<h2>По1дгузники для малышей <span class="star"><img src="/assets/images/star.svg" alt="" /></span> премиум-класс качества, который обеспечивает комфорт и защиту <span class="violet__color">вашему</span> малышу</h2>
 		<div class="columns">
 			<div class="column">
 				<h3>Высокая степень впитывания</h3>
