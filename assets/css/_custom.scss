@@ -339,6 +339,32 @@ section.hero {
 				width: 392px;
 				text-align: center;
 				padding: 24px 28px;
+				color: $dark_gray;
+			}
+		}
+	}
+}
+section.advantages {
+	padding: 126px 0;
+	.container {
+		h2 {
+			font-weight: 500;
+			font-size: 40px;
+			line-height: 60px;
+			text-transform: uppercase;
+			color: $black;
+			display: inline-block;
+			margin: 0 auto;
+			text-align: center;
+			max-width: 1097px;
+			.star {
+				margin: 0 5px 0 15px;
+				vertical-align: bottom;
+			}
+			.violet__color {
+				background: url('../assets/images/violet.svg');
+				width: 187px;
+				display: inline-block;
 			}
 		}
 	}

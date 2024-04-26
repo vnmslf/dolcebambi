@@ -741,10 +741,33 @@ section.hero .container {
       margin-right: auto;
       width: 392px;
       text-align: center;
-      padding: 24px 28px; }
+      padding: 24px 28px;
+      color: #332d2b; }
       section.hero .container .foreground .button:hover,
       section.hero .container .foreground .button .active {
         /*@include btn();*/
         background-color: #00a9a4;
         border-color: #00a9a4;
         color: #fff; }
+
+section.advantages {
+  padding: 126px 0; }
+  section.advantages .container h2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #000;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1097px; }
+    section.advantages .container h2 .star {
+      margin: 0 5px 0 15px;
+      vertical-align: bottom; }
+    section.advantages .container h2 .violet__color {
+      background: url("../assets/images/violet.svg");
+      width: 187px;
+      display: inline-block; }
+
+/*# sourceMappingURL=styles.css.map */
