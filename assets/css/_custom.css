@@ -362,7 +362,7 @@ section.advantages {
     text-transform: uppercase;
     color: #000;
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 auto 120px;
     text-align: center;
     max-width: 1097px; }
     section.advantages .container h2 .star {
@@ -372,5 +372,50 @@ section.advantages {
       background: url("../assets/images/violet.svg");
       width: 187px;
       display: inline-block; }
+  section.advantages .container .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 70px; }
+    section.advantages .container .columns .column {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 24px;
+      position: relative; }
+      section.advantages .container .columns .column svg {
+        position: absolute;
+        z-index: -1; }
+        section.advantages .container .columns .column svg.icon {
+          top: 10px;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+        section.advantages .container .columns .column svg.bg {
+          top: 10px;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -28%); }
+      section.advantages .container .columns .column h3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000; }
+      section.advantages .container .columns .column p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #000; }
 
 /*# sourceMappingURL=_custom.css.map */
