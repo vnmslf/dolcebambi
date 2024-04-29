@@ -814,3 +814,123 @@ section.advantages {
         line-height: 30px;
         text-align: center;
         color: #000; }
+
+section.catalog .container .caption h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 24px;
+  display: block; }
+section.catalog .container .caption p {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  margin: 0; }
+  section.catalog .container .caption p svg {
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    right: -80px;
+    transform: translate(50%, -50%); }
+section.catalog .container .products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px; }
+  section.catalog .container .products .product {
+    position: relative;
+    min-width: 310px; }
+    section.catalog .container .products .product .badge {
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      right: -30px; }
+    section.catalog .container .products .product img {
+      margin: 0 17px 10px;
+      max-width: 100%; }
+    section.catalog .container .products .product .name {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #332d2b;
+      margin-bottom: 24px; }
+    section.catalog .container .products .product .button {
+      display: inline-block;
+      border-radius: 6px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer;
+      border-width: 1px;
+      border-style: solid;
+      padding: 16px 28px;
+      text-decoration: none;
+      line-height: 1.5;
+      font-weight: 400;
+      font-size: 20px;
+      /*@include btn();*/
+      background-color: #009fe3;
+      border-color: #009fe3;
+      color: #fff;
+      border-radius: 16px;
+      border: 1px solid #009fe3;
+      color: #fff;
+      padding: 15px 28px;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+      font-size: 20px;
+      text-decoration: none; }
+
+section.slogan .container h2 {
+  margin: 126px auto 0;
+  max-width: 1000px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center; }
+
+section.cta .container {
+  display: flex;
+  flex-direction: row;
+  position: relative; }
+  section.cta .container .right {
+    align-self: flex-end;
+    color: #fff; }
+    section.cta .container .right .button {
+      display: inline-block;
+      border-radius: 6px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer;
+      border-width: 1px;
+      border-style: solid;
+      padding: 16px 28px;
+      text-decoration: none;
+      line-height: 1.5;
+      font-weight: 400;
+      font-size: 20px;
+      /*@include btn();*/
+      background-color: #009fe3;
+      border-color: #009fe3;
+      color: #fff;
+      border-radius: 16px;
+      border: 1px solid #009fe3;
+      color: #fff;
+      padding: 15px 28px;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+      font-size: 20px;
+      text-decoration: none; }
+    section.cta .container .right svg {
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%); }
+
+/*# sourceMappingURL=styles.css.map */

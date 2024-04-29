@@ -421,3 +421,124 @@ section.advantages {
 		}
 	}
 }
+section.catalog {
+	.container {
+		.caption {
+			h2 {
+				font-weight: 500;
+				font-size: 40px;
+				line-height: 60px;
+				text-transform: uppercase;
+				color: $black;
+				margin-bottom: 24px;
+				display: block;
+			}
+			p {
+				position: relative;
+				display: inline-block;
+				width: max-content;
+				margin: 0;
+				svg {
+					position: absolute;
+					z-index: -1;
+					top: -60px;
+					right: -80px;
+					transform: translate(50%, -50%);
+				}
+			}
+		}
+		.products {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-top: 80px;
+			.product {
+				position: relative;
+				min-width: 310px;
+				.badge {
+					position: absolute;
+					z-index: 1;
+					top: -20px;
+					right: -30px;
+				}
+				img {
+					margin: 0 17px 10px;
+					max-width: 100%;
+				}
+				.name {
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 28px;
+					color: $dark_gray;
+					margin-bottom: 24px;
+				}
+				.button {
+					@include btn();
+					@include btn-color-default($light_blue);
+					border-radius: 16px;
+					border: 1px solid $light_blue;
+					color: $white;
+					padding: 15px 28px;
+					width: 100%;
+					text-align: center;
+					font-weight: 500;
+					font-size: 20px;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+section.slogan {
+	.container {
+		h2 {
+			margin: 126px auto 0;
+			max-width: 1000px;
+			font-weight: 500;
+			font-size: 40px;
+			line-height: 60px;
+			text-transform: uppercase;
+			color: $black;
+			text-align: center;
+		}
+	}
+}
+section.cta {
+	.container {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		.left {
+			img {
+			}
+		}
+		.right {
+			align-self: flex-end;
+			color: $white;
+			h2 {
+			}
+			p {
+			}
+			.button {
+				@include btn();
+				@include btn-color-default($light_blue);
+				border-radius: 16px;
+				border: 1px solid $light_blue;
+				color: $white;
+				padding: 15px 28px;
+				width: 100%;
+				text-align: center;
+				font-weight: 500;
+				font-size: 20px;
+				text-decoration: none;
+			}
+			svg {
+				position: absolute;
+				z-index: -1;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
