@@ -125,6 +125,11 @@ header {
         background-color: #00a9a4;
         border-color: #00a9a4;
         color: #fff; }
+  @media (max-width: 1279.98px) {
+    header .container .header__line {
+      padding: 0 16px; }
+      header .container .header__line .main__menu ul li a {
+        font-size: 20px; } }
 
 footer {
   display: -webkit-box;
@@ -429,6 +434,8 @@ section.catalog .container .caption h2 {
 section.catalog .container .caption p {
   position: relative;
   display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin: 0; }
   section.catalog .container .caption p svg {
@@ -436,10 +443,18 @@ section.catalog .container .caption p {
     z-index: -1;
     top: -60px;
     right: -80px;
+    -webkit-transform: translate(50%, -50%);
     transform: translate(50%, -50%); }
 section.catalog .container .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 80px; }
   section.catalog .container .products .product {
@@ -497,12 +512,30 @@ section.slogan .container h2 {
   text-align: center; }
 
 section.cta .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   position: relative; }
   section.cta .container .right {
+    -ms-flex-item-align: end;
     align-self: flex-end;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 90px; }
+    section.cta .container .right h3 {
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 60px; }
+    section.cta .container .right p {
+      margin-bottom: 32px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px; }
     section.cta .container .right .button {
       display: inline-block;
       border-radius: 6px;
@@ -517,23 +550,39 @@ section.cta .container {
       font-weight: 400;
       font-size: 20px;
       /*@include btn();*/
-      background-color: #009fe3;
-      border-color: #009fe3;
+      background-color: #e6007e;
+      border-color: #e6007e;
       color: #fff;
       border-radius: 16px;
-      border: 1px solid #009fe3;
+      border: 1px solid #e6007e;
       color: #fff;
       padding: 15px 28px;
       width: 100%;
       text-align: center;
       font-weight: 500;
       font-size: 20px;
-      text-decoration: none; }
+      text-decoration: none;
+      max-width: 382px;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px; }
     section.cta .container .right svg {
       position: absolute;
       z-index: -1;
       left: 50%;
       bottom: 0;
+      -webkit-transform: translateX(-50%);
       transform: translateX(-50%); }
+@media (max-width: 1439.98px) {
+  section.cta {
+    overflow: hidden; } }
+@media (max-width: 1279.98px) {
+  section.cta {
+    margin-top: 40px; }
+    section.cta .container .left {
+      max-width: 400px; }
+      section.cta .container .left img {
+        max-width: 100%; } }
 
 /*# sourceMappingURL=_custom.css.map */

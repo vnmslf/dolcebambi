@@ -108,6 +108,36 @@ header {
 			}
 		}
 	}
+	@include media-down(xlarge) {
+		.container {
+			.header__line {
+				padding: 0 16px;
+				.logotype {
+				}
+				.burger {
+				}
+				.main__menu {
+					ul {
+						li {
+							a {
+								font-size: 20px;
+								&.active {
+									&:before {
+									}
+									span {
+									}
+								}
+							}
+						}
+					}
+				}
+				.actions {
+					.button {
+					}
+				}
+			}
+		}
+	}
 }
 footer {
 	display: -webkit-box;
@@ -436,6 +466,8 @@ section.catalog {
 			p {
 				position: relative;
 				display: inline-block;
+				width: -webkit-max-content;
+				width: -moz-max-content;
 				width: max-content;
 				margin: 0;
 				svg {
@@ -443,14 +475,22 @@ section.catalog {
 					z-index: -1;
 					top: -60px;
 					right: -80px;
-					transform: translate(50%, -50%);
+					-webkit-transform: translate(50%, -50%);
+					        transform: translate(50%, -50%);
 				}
 			}
 		}
 		.products {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
 			margin-top: 80px;
 			.product {
 				position: relative;
@@ -505,25 +545,41 @@ section.slogan {
 }
 section.cta {
 	.container {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 		position: relative;
 		.left {
 			img {
 			}
 		}
 		.right {
-			align-self: flex-end;
+			-ms-flex-item-align: end;
+			    align-self: flex-end;
 			color: $white;
-			h2 {
+			margin-bottom: 90px;
+			h3 {
+				text-transform: uppercase;
+				margin-bottom: 8px;
+				font-weight: 500;
+				font-size: 40px;
+				line-height: 60px;
 			}
 			p {
+				margin-bottom: 32px;
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 34px;
 			}
 			.button {
 				@include btn();
-				@include btn-color-default($light_blue);
+				@include btn-color-default($rose);
 				border-radius: 16px;
-				border: 1px solid $light_blue;
+				border: 1px solid $rose;
 				color: $white;
 				padding: 15px 28px;
 				width: 100%;
@@ -531,13 +587,59 @@ section.cta {
 				font-weight: 500;
 				font-size: 20px;
 				text-decoration: none;
+				max-width: 382px;
+				display: inline-block;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 30px;
 			}
 			svg {
 				position: absolute;
 				z-index: -1;
 				left: 50%;
 				bottom: 0;
-				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+				        transform: translateX(-50%);
+			}
+		}
+	}
+	@include media-down(xxlarge) {
+		overflow: hidden;
+		.container {
+			.left {
+				img {
+				}
+			}
+			.right {
+				h3 {
+				}
+				p {
+				}
+				.button {
+				}
+				svg {
+				}
+			}
+		}
+	}
+	@include media-down(xlarge) {
+		margin-top: 40px;
+		.container {
+			.left {
+				max-width: 400px;
+				img {
+					max-width: 100%;
+				}
+			}
+			.right {
+				h3 {
+				}
+				p {
+				}
+				.button {
+				}
+				svg {
+				}
 			}
 		}
 	}
