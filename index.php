@@ -112,7 +112,7 @@
 </section>
 <section class="slogan">
 	<div class="container">
-		<h2>Dolcebambi-это идеальный выбор для тех, кто ищет комфорт и высокое качество для своего малыша</h2>
+		<h2>Dolcebambi-это идеальный выбор для тех, кто ищет комфорт и&nbsp;высокое качество для&nbsp;своего малыша</h2>
 	</div>
 </section>
 <section class="cta">

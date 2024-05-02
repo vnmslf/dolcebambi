@@ -14,9 +14,8 @@
 				</div>
 				<div class="subscribe">
 					Оставить заявку
-					<form action="">
-						<input type="text" value="Ваш телефон" />
-					</form>
+<?$prefix = 'footer';
+require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order.php')?>
 				</div>
 			</div>
 			<div class="right">
@@ -75,6 +74,7 @@
 	<script src="/assets/js/jquery.js"></script>
 	<script src="/assets/js/owl.carousel.js"></script>
 	<script src="/assets/js/functions.js"></script>
+	<!--<script src="/assets/js/jquery.maskedinput.min.js"></script>-->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 	<?$ym_id = '94568293';?>

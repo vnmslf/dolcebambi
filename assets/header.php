@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="ru-Ru">
+<?$now_url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http').'://'.$_SERVER['HTTP_HOST'].'/';?>
 <head>
+	<link rel="alternate" hreflang="x-default" href="<?=$now_url?>" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
 	<meta name="author" content="dolcebambi.ru" />

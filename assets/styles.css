@@ -527,6 +527,13 @@ header {
       padding: 0 16px; }
       header .container .header__line .main__menu ul li a {
         font-size: 20px; } }
+  @media (max-width: 991.98px) {
+    header .container .header__line {
+      padding: 0; }
+      header .container .header__line .main__menu {
+        position: absolute; }
+        header .container .header__line .main__menu ul li a {
+          font-size: 20px; } }
 
 footer {
   display: -webkit-box;
@@ -572,6 +579,43 @@ footer {
       font-size: 20px;
       line-height: 150%;
       max-width: 389px; }
+      footer .container .left .subscribe form {
+        border: 1px solid #e6007e;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-top: 14px; }
+        footer .container .left .subscribe form .form-section {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          position: relative; }
+          footer .container .left .subscribe form .form-section .form-group {
+            display: flex;
+            flex: 0 0 100%; }
+            footer .container .left .subscribe form .form-section .form-group input {
+              padding: 15px;
+              border-radius: 0;
+              border: none;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 22px;
+              color: #414141; }
+              footer .container .left .subscribe form .form-section .form-group input::-webkit-input-placeholder {
+                font-size: 16px;
+                line-height: 22px;
+                color: #414141; }
+          footer .container .left .subscribe form .form-section .form-submit {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(230, 0, 126, 0.6); }
+            footer .container .left .subscribe form .form-section .form-submit button {
+              height: 100%;
+              background: none;
+              border: none;
+              padding: 11px 24px; }
     footer .container .right {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -636,6 +680,26 @@ footer {
       footer .container .bottom a {
         text-decoration: none;
         color: #414141; }
+  @media (max-width: 1279.98px) {
+    footer .container .left {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+      width: 100%;
+      max-width: unset; }
+      footer .container .left .description {
+        width: 400px; }
+      footer .container .left .subscribe {
+        width: 389px; }
+    footer .container .right {
+      flex: 0 0 100%;
+      justify-content: space-between;
+      margin-top: 40px; }
+    footer .container .bottom {
+      margin-top: 32px; } }
 
 ol {
   color: #000;
@@ -754,6 +818,15 @@ section.hero .container {
         background-color: #00a9a4;
         border-color: #00a9a4;
         color: #fff; }
+@media (max-width: 991.98px) {
+  section.hero .container .foreground .logo {
+    display: none; }
+  section.hero .container .foreground .slogan {
+    width: 70%;
+    margin-top: 120px; }
+  section.hero .container .foreground .button {
+    margin: 0 auto;
+    padding: 16px 20px; } }
 
 section.advantages {
   padding: 126px 0; }
@@ -819,6 +892,15 @@ section.advantages {
         line-height: 30px;
         text-align: center;
         color: #000; }
+  @media (max-width: 991.98px) {
+    section.advantages {
+      padding: 60px 0; }
+      section.advantages .container h2 {
+        font-size: 36px;
+        line-height: 44px; }
+      section.advantages .container .columns {
+        flex-direction: column;
+        gap: 16px; } }
 
 section.catalog .container .caption h2 {
   font-weight: 500;
@@ -897,6 +979,20 @@ section.catalog .container .products {
       font-weight: 500;
       font-size: 20px;
       text-decoration: none; }
+@media (max-width: 991.98px) {
+  section.catalog .container .caption h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 16px; }
+  section.catalog .container .caption p svg {
+    top: -30px;
+    right: -50px; }
+  section.catalog .container .products {
+    margin-top: 50px; }
+    section.catalog .container .products .product {
+      min-width: unset; }
+      section.catalog .container .products .product .badge {
+        transform: scale(0.7); } }
 
 section.slogan .container h2 {
   margin: 126px auto 0;
@@ -981,3 +1077,5 @@ section.cta .container {
       max-width: 400px; }
       section.cta .container .left img {
         max-width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */
