@@ -9,7 +9,7 @@
 		<div class="foreground">
 			<img class="logo" src="/assets/images/logo.svg" alt="" />
 			<img class="slogan" src="/assets/images/slogan.svg" alt="" />
-			<a class="button" href="#">Оставить заяв11ку</a>
+			<a class="button" href="#">Оставить заявку</a>
 		</div>
 	</div>
 </section>
