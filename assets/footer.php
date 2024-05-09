@@ -71,7 +71,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order.php')?>
 			</div>
 		</div>
 	</footer>
-	<script src="/assets/js/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="/assets/js/owl.carousel.js"></script>
 	<script src="/assets/js/functions.js"></script>
 	<!--<script src="/assets/js/jquery.maskedinput.min.js"></script>-->
@@ -116,6 +116,12 @@ require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order.php')?>
 			}
 		}
 		document.addEventListener('contextmenu', handleMailtoRightClick);
-  </script>
+	</script>
+	<script>
+		jQuery.noConflict();
+		jQuery('.burger').on('click', function($) {
+			$(this).addClass('lol');
+		});
+	</script>
 </body>
 </html>
