@@ -72,7 +72,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order.php')?>
 		</div>
 	</footer>
 	<script type="text/javascript" src="/assets/js/jquery.js"></script>
-	<script type="text/javascript" src="/assets/js/custom.js"></script>
+	<script type="text/javascript" src="/assets/js/custom.min.js"></script>
 	<?$ym_id = '94568293';?>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">

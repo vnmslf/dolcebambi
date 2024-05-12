@@ -56,6 +56,7 @@ header {
 				display: none;
 			}
 			.main__menu {
+				transition: .3s;
 				ul {
 					list-style: none;
 					display: -webkit-box;
@@ -95,6 +96,9 @@ header {
 								}
 							}
 						}
+						&.close {
+							display: none;
+						}
 					}
 				}
 			}
@@ -127,6 +131,8 @@ header {
 									span {
 									}
 								}
+							}
+							&.close {
 							}
 						}
 					}
@@ -180,19 +186,53 @@ header {
 							background: $black;
 						}
 					}
+					+ .main__menu {
+						//display: none;
+						position: absolute;
+						z-index: 1;
+						top: 0;
+						left: 0;
+						transform: translate(0, -500%);
+						transition: .3s;
+						width: 100%;
+						height: 100%;
+					}
+					&.open {
+						+ .main__menu {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							position: fixed;
+							z-index: 1;
+							transform: translate(0, 0);
+							background: rgba($black, .9);
+						}
+					}
 				}
 				.main__menu {
-					display: none;
 					ul {
+						flex-direction: column;
+						gap: 10px;
 						li {
+							text-align: center;
 							a {
-								font-size: 20px;
+								font-size: 30px;
+								color: $white;
 								&.active {
 									&:before {
 									}
 									span {
 									}
 								}
+							}
+							&.close {
+								display: block;
+								position: fixed;
+								bottom: 20px;
+								left: 50%;
+								color: $white;
+								font-size: 50px;
+								transform: rotate(45deg) translateX(-50%);
 							}
 						}
 					}
@@ -622,6 +662,29 @@ section.hero {
 			}
 		}
 	}
+	@include media-down(medium) {
+		.container {
+			.background {
+				.hero {
+				}
+				.pattern {
+				}
+				.pattern-2 {
+				}
+			}
+			.foreground {
+				gap: 15px;
+				.logo {
+					display: none;
+				}
+				.slogan {
+					margin-top: 70px;
+				}
+				.button {
+				}
+			}
+		}
+	}
 }
 section.advantages {
 	padding: 126px 0;
@@ -858,6 +921,7 @@ section.catalog {
 				}
 			}
 			.products {
+				flex-direction: column;
 				.product {
 					.badge {
 					}
