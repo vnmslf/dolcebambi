@@ -64,6 +64,7 @@ $url = $url[0];
 								<span>Где купить</span>
 							</a>
 						</li>
+						<li class="close">+</li>
 					</ul>
 				</nav>
 				<div class="actions">
