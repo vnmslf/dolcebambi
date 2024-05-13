@@ -50,7 +50,7 @@ $url = $url[0];
 				<nav class="main__menu">
 					<ul>
 						<li>
-							<a<?if($url === '') {?>} class="active"<?}?> href="#catalog" data-href="#catalog">
+							<a<?if($url === '') {?>} class="active"<?}?> href="/">
 								<span>Каталог</span>
 							</a>
 						</li>
@@ -60,7 +60,7 @@ $url = $url[0];
 							</a>
 						</li>
 						<li>
-							<a<?if($url === '/catalog/') {?>} class="active"<?}?> href="#catalog" data-href="#catalog">
+							<a<?if($url === '/where-buy/') {?>} class="active"<?}?> href="/where-buy/">
 								<span>Где купить</span>
 							</a>
 						</li>

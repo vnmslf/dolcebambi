@@ -1206,3 +1206,93 @@ section.cta {
 		}
 	}
 }
+section.where-buy {
+	margin-top: 126px;
+	.container {
+		gap: 24px;
+		h1 {
+			font-weight: 500;
+			font-size: 40px;
+			line-height: 60px;
+			text-transform: uppercase;
+			color: $black;
+			margin: 0;
+		}
+		p {
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 34px;
+			color: $black;
+			margin: 0;
+		}
+		.columns {
+			margin-top: 44px;
+			padding: 0 20px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			a.column {
+				text-decoration: none;
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	@include media-down(xxlarge) {
+		.container {
+			h1 {
+			}
+			p {
+			}
+			.columns {
+				a.column {
+					img {
+						max-width: 75%;
+					}
+				}
+			}
+		}
+	}
+	@include media-down(xmedium) {
+		.container {
+			h1 {
+			}
+			p {
+			}
+			.columns {
+				flex-wrap: wrap;
+				gap: 10px;
+				a.column {
+					display: inline-flex;
+					flex: 0 0 calc(50% - 5px);
+					img {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+	@include media-down(xsmall) {
+		.container {
+			h1 {
+			}
+			p {
+			}
+			.columns {
+				flex-wrap: no-wrap;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 5px;
+				a.column {
+					display: flex;
+					flex: 0 0 100%;
+					img {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
