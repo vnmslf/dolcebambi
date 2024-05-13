@@ -522,6 +522,51 @@ footer {
 			}
 		}
 	}
+	@include media-down(xsmall) {
+		.container {
+			.b-logo {
+			}
+			.left {
+				.description {
+					p {
+					}
+				}
+				.subscribe {
+					width: unset;
+					form {
+						.form-section {
+							.form-group {
+								input {
+									&::-webkit-input-placeholder {
+									}
+								}
+							}
+							.form-submit {
+								button {
+								}
+							}
+						}
+					}
+				}
+			}
+			.right {
+				.column {
+					h5 {
+					}
+					ul {
+						li {
+							a {
+							}
+						}
+					}
+				}
+			}
+			.bottom {
+				a {
+				}
+			}
+		}
+	}
 }
 ol {
 	color: $black;
@@ -685,6 +730,27 @@ section.hero {
 			}
 		}
 	}
+	@include media-down(xsmall) {
+		.container {
+			.background {
+				.hero {
+				}
+				.pattern {
+				}
+				.pattern-2 {
+				}
+			}
+			.foreground {
+				.logo {
+				}
+				.slogan {
+				}
+				.button {
+					width: unset;
+				}
+			}
+		}
+	}
 }
 section.advantages {
 	padding: 126px 0;
@@ -776,6 +842,37 @@ section.advantages {
 			.columns {
 				flex-direction: column;
 				gap: 16px;
+				.column {
+					svg {
+						&.icon {
+						}
+						&.bg {
+						}
+					}
+					h3 {
+					}
+					p {
+					}
+				}
+			}
+		}
+	}
+	@include media-down(xsmall) {
+		.container {
+			h2 {
+				font-size: 26px;
+				line-height: 38px;
+				.star {
+					margin: 0;
+					img {
+						width: 30px;
+						height: 30px;
+					}
+				}
+				.violet__color {
+				}
+			}
+			.columns {
 				.column {
 					svg {
 						&.icon {
@@ -915,6 +1012,7 @@ section.catalog {
 				h2 {
 				}
 				p {
+					width: unset;
 					svg {
 						display: none;
 					}
@@ -947,6 +1045,14 @@ section.slogan {
 			text-transform: uppercase;
 			color: $black;
 			text-align: center;
+		}
+	}
+	@include media-down(xsmall) {
+		.container {
+			h2 {
+				font-size: 26px;
+				line-height: 38px;
+			}
 		}
 	}
 }

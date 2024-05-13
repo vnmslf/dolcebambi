@@ -382,6 +382,9 @@ footer {
       footer .container .right {
         flex-wrap: wrap;
         gap: 40px; } }
+  @media (max-width: 599.98px) {
+    footer .container .left .subscribe {
+      width: unset; } }
 
 ol {
   color: #000;
@@ -516,6 +519,9 @@ section.hero .container {
       display: none; }
     section.hero .container .foreground .slogan {
       margin-top: 70px; } }
+@media (max-width: 599.98px) {
+  section.hero .container .foreground .button {
+    width: unset; } }
 
 section.advantages {
   padding: 126px 0; }
@@ -590,6 +596,15 @@ section.advantages {
       section.advantages .container .columns {
         flex-direction: column;
         gap: 16px; } }
+  @media (max-width: 599.98px) {
+    section.advantages .container h2 {
+      font-size: 26px;
+      line-height: 38px; }
+      section.advantages .container h2 .star {
+        margin: 0; }
+        section.advantages .container h2 .star img {
+          width: 30px;
+          height: 30px; } }
 
 section.catalog .container .caption h2 {
   font-weight: 500;
@@ -692,8 +707,10 @@ section.catalog .container .products {
         line-height: 1.2;
         width: max-content; } }
 @media (max-width: 767.98px) {
-  section.catalog .container .caption p svg {
-    display: none; }
+  section.catalog .container .caption p {
+    width: unset; }
+    section.catalog .container .caption p svg {
+      display: none; }
   section.catalog .container .products {
     flex-direction: column; } }
 
@@ -706,6 +723,10 @@ section.slogan .container h2 {
   text-transform: uppercase;
   color: #000;
   text-align: center; }
+@media (max-width: 599.98px) {
+  section.slogan .container h2 {
+    font-size: 26px;
+    line-height: 38px; } }
 
 section.cta .container {
   display: -webkit-box;
