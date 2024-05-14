@@ -1310,8 +1310,15 @@ section.thank-you {
   .modal.header__modal form {
     display: flex;
     flex-direction: column;
+    gap: 24px;
     background: #fff;
     width: 794px;
-    height: 786px; }
+    height: 786px;
+    padding: 56px; }
+    .modal.header__modal form .form-section {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 34px; }
 
 /*# sourceMappingURL=styles.css.map */

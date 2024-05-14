@@ -1337,9 +1337,17 @@ section.thank-you {
 		form {
 			display: flex;
 			flex-direction: column;
+			gap: 24px;
 			background: $white;
 			width: 794px;
 			height: 786px;
+			padding: 56px;
+			.form-section {
+				margin-top: 32px;
+				display: flex;
+				flex-direction: column;
+				gap: 34px;
+			}
 		}
 	}
 }

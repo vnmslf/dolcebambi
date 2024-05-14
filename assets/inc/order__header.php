@@ -1,4 +1,6 @@
 <form name="<?=$prefix?>main" class="class" action="/assets/inc/form.php" method="post" enctype="multipart/form-data">
+	<h2>Оставьте заявку</h2>
+	<p>Оставьте заявку на преобретение продукции Dolcebambi и наш менеджер свяжется с вами</p>
 	<div class="form-section">
 		<div class="form-group">
 			<input type="text" name="<?=$prefix?>name" id="<?=$prefix?>name" class="form-control form-control-lg required" value="" placeholder="Имя*" />
