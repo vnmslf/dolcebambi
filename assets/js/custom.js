@@ -1,3 +1,6 @@
+$(document).ready(function() {
+	$('.masked__phone').mask('+7 (999) 999-99-99');
+})
 $(document).on('click', '.burger', function() {
 	var body = $('body');
 	if($(this).hasClass('open')) {
@@ -11,6 +14,6 @@ $(document).on('click', '.burger', function() {
 $(document).on('click', '.close', function() {
 	$('.burger').trigger('click');
 })
-$(document).ready(function() {
-	$('.masked__phone').mask('+7 (999) 999-99-99');
+$(document).on('click', '.button__header', function() {
+	$('body').find('.' + $(this).attr('data-modal')).addClass('open');
 })

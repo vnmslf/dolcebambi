@@ -896,4 +896,23 @@ section.thank-you {
       color: #000;
       margin: 0; }
 
+.modal {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.54);
+  display: none; }
+  .modal.open {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .modal .header__modal form {
+    background: #fff;
+    width: 794px;
+    height: 786px; }
+
 /*# sourceMappingURL=_custom.css.map */

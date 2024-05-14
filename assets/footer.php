@@ -15,7 +15,7 @@
 				<div class="subscribe">
 					Оставить заявку
 <?$prefix = 'footer';
-require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order.php')?>
+require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order__footer.php')?>
 				</div>
 			</div>
 			<div class="right">
@@ -71,6 +71,10 @@ require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order.php')?>
 			</div>
 		</div>
 	</footer>
+	<div class="modal header__modal">
+<?$prefix = 'header';
+require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order__header.php')?>
+	</div>
 	<script type="text/javascript" src="/assets/js/jquery.js"></script>
 	<script type="text/javascript" src="/assets/js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="/assets/js/custom.min.js"></script>

@@ -71,7 +71,7 @@ $menu_url = $menu_url[0];
 					</ul>
 				</nav>
 				<div class="actions">
-					<a href="#" class="button button__header">Оставить заявку</a>
+					<div class="button button__header" data-modal="header__modal">Оставить заявку</div>
 				</div>
 			</div>
 		</div>
