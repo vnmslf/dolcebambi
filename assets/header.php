@@ -33,6 +33,9 @@
 <?$url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http').'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 $url = explode('?', $url);
 $url = $url[0];
+$menu_url = $_SERVER['REQUEST_URI'];
+$menu_url = explode('?', $menu_url);
+$menu_url = $menu_url[0];
 ?>
 	<header>
 		<div class="container">
@@ -50,17 +53,17 @@ $url = $url[0];
 				<nav class="main__menu">
 					<ul>
 						<li>
-							<a<?if($url === '') {?>} class="active"<?}?> href="/">
+							<a<?if($menu_url === '' || $menu_url === '/') {?> class="active"<?}?> href="/">
 								<span>Каталог</span>
 							</a>
 						</li>
 						<li>
-							<a<?if($url === '/catalog/') {?>} class="active"<?}?> href="#catalog" data-href="#catalog">
+							<a<?if($menu_url === '/catalog/') {?>} class="active"<?}?> href="#catalog" data-href="#catalog">
 								<span>Контакты</span>
 							</a>
 						</li>
 						<li>
-							<a<?if($url === '/where-buy/') {?>} class="active"<?}?> href="/where-buy/">
+							<a<?if($menu_url === '/where-buy/') {?> class="active"<?}?> href="/where-buy/">
 								<span>Где купить</span>
 							</a>
 						</li>
