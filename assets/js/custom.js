@@ -17,3 +17,6 @@ $(document).on('click', '.close', function() {
 $(document).on('click', '.button__header', function() {
 	$('body').find('.' + $(this).attr('data-modal')).addClass('open');
 })
+$(document).on('click', '.modal__close', function() {
+	$(this).parents('.modal').removeClass('open');
+})

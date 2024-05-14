@@ -1,6 +1,6 @@
 <form name="<?=$prefix?>main" class="class" action="/assets/inc/form.php" method="post" enctype="multipart/form-data">
 	<h2>Оставьте заявку</h2>
-	<p>Оставьте заявку на преобретение продукции Dolcebambi и наш менеджер свяжется с вами</p>
+	<p>Оставьте заявку на&nbsp;преобретение продукции Dolcebambi и&nbsp;наш менеджер свяжется с&nbsp;вами</p>
 	<div class="form-section">
 		<div class="form-group">
 			<input type="text" name="<?=$prefix?>name" id="<?=$prefix?>name" class="form-control form-control-lg required" value="" placeholder="Имя*" />
@@ -15,11 +15,10 @@
 			<input type="text" id="<?=$prefix?>botcheck" name="<?=$prefix?>botcheck" value="" />
 		</div>
 		<div class="form-submit">
-			<button type="submit" name="<?=$prefix?>submit">
-				<img src="/assets/images/arrow.svg" alt="стрелочка" />
-			</button>
+			<button type="submit" name="<?=$prefix?>submit">Оставить заявку</button>
 		</div>
 		<input type="hidden" name="prefix" value="<?=$prefix?>">
 		<input type="hidden" name="autoresponder" value="true">
 	</div>
 </form>
+<div class="modal__close"></div>
