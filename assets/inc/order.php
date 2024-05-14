@@ -4,7 +4,8 @@
 			<input type="tel" name="<?=$prefix?>phone" id="<?=$prefix?>phone" class="masked__phone form-control form-control-lg required" value="" placeholder="Ваш телефон" maxlength="12" />
 		</div>
 		<div class="d-none">
-			<input type="text" id="<?=$prefix?>botcheck" name="<?=$prefix?>botcheck" value="">
+			<input type="text" id="<?=$prefix?>botcheck" name="<?=$prefix?>botcheck" value="" />
+			<input type="text" id="<?=$prefix?>html_title" name=<?=$prefix?>html_title value="Форма с телефоном из подвала сайта" />
 		</div>
 		<div class="form-submit">
 			<button type="submit" name="<?=$prefix?>submit">
