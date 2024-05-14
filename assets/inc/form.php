@@ -38,7 +38,7 @@ $toemails[] = array(
 ---------------------------------------------------*/
 
 $fromemail = array(
-				'email' => 'info@dolcebambi.ru', // Company's Email Address (preferably currently used Domain Name)
+				'email' => 'info@sk-slavyane.ru', // Company's Email Address (preferably currently used Domain Name)
 				'name' => 'Администратор' // Company Name
 			);
 
