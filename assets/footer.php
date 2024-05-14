@@ -40,7 +40,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order.php')?>
 					<h5>Информация:</h5>
 					<ul>
 						<li>
-							<a href="/" data-href="<?if($menu_url === '' || $menu_url === '/') {?>#catalog<?} else {?>/<?}?>">Каталог</a>
+							<a href="<?if($menu_url === '' || $menu_url === '/') {?>#catalog<?} else {?>/<?}?>" data-href="<?if($menu_url === '' || $menu_url === '/') {?>#catalog<?} else {?>/<?}?>">Каталог</a>
 						</li>
 						<li>
 							<a href="/">О нас</a>
