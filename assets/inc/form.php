@@ -258,7 +258,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 	$ar_footer	= !empty( $submits['ar_footer'] ) ? $submits['ar_footer'] : 'Copyrights &copy; ' . date('Y') . ' <strong>SemiColonWeb</strong>. All Rights Reserved.';
 
-	$mail->Subject = !empty( $submits['subject'] ) ? $submits['subject'] : 'Форма с телефоном из подвала сайта';
+	$mail->Subject = !empty( $submits['subject'] ) ? $submits['subject'] : 'Форма обратной связи';
 	$mail->SetFrom( $fromemail['email'] , $fromemail['name'] );
 
 	if( !empty( $replyto ) ) {
