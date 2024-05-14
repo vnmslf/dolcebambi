@@ -23,16 +23,16 @@ require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order.php')?>
 					<h5>Где купить:</h5>
 					<ul>
 						<li>
-							<a href="/">Яндекс Маркет</a>
+							<a href="https://market.yandex.ru/product--podguzniki-dlia-malyshei-dolcebambi-razmer-l/1916626771?sku=102389617285&do-waremd5=L4hSEaQqdwaXqCkil90Tgg&uniqueId=83010635" target="_blank">Яндекс Маркет</a>
 						</li>
 						<li>
-							<a href="/">OZON</a>
+							<a href="https://ozon.ru/t/wX7yzzN" target="_blank">OZON</a>
 						</li>
 						<li>
-							<a href="/">Детский Мир</a>
+							<a href="https://www.detmir.ru/product/index/id/6379431/" target="_blank">Детский Мир</a>
 						</li>
 						<li>
-							<a href="/">Wildberris</a>
+							<a href="https://www.wildberries.ru/catalog/212681498/detail.aspx" target="_blank">Wildberris</a>
 						</li>
 					</ul>
 				</div>
@@ -40,7 +40,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/assets/inc/order.php')?>
 					<h5>Информация:</h5>
 					<ul>
 						<li>
-							<a href="/">Каталог</a>
+							<a href="#" data-href="/#catalog">Каталог</a>
 						</li>
 						<li>
 							<a href="/">О нас</a>

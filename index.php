@@ -45,7 +45,7 @@
 		</div>
 	</div>
 </section>
-<section class="catalog">
+<section id="catalog" class="catalog">
 	<div class="container">
 		<div class="caption">
 			<h2>Каталог товаров</h2>
