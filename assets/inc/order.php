@@ -5,7 +5,6 @@
 		</div>
 		<div class="d-none">
 			<input type="text" id="<?=$prefix?>botcheck" name="<?=$prefix?>botcheck" value="" />
-			<input type="text" id="<?=$prefix?>html_title" name=<?=$prefix?>html_title value="Форма с телефоном из подвала сайта" />
 		</div>
 		<div class="form-submit">
 			<button type="submit" name="<?=$prefix?>submit">
