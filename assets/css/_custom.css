@@ -910,7 +910,9 @@ section.thank-you {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .modal .header__modal form {
+  .modal.header__modal form {
+    display: flex;
+    flex-direction: column;
     background: #fff;
     width: 794px;
     height: 786px; }

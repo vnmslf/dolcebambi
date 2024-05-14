@@ -1333,8 +1333,10 @@ section.thank-you {
 		justify-content: center;
 		align-items: center;
 	}
-	.header__modal {
+	&.header__modal {
 		form {
+			display: flex;
+			flex-direction: column;
 			background: $white;
 			width: 794px;
 			height: 786px;
