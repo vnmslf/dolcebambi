@@ -1296,3 +1296,25 @@ section.where-buy {
 		}
 	}
 }
+section.thank-you {
+	margin-top: 126px;
+	text-align: center;
+	.container {
+		gap: 24px;
+		h1 {
+			font-weight: 500;
+			font-size: 40px;
+			line-height: 60px;
+			text-transform: uppercase;
+			color: $black;
+			margin: 0;
+		}
+		p {
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 34px;
+			color: $black;
+			margin: 0;
+		}
+	}
+}
