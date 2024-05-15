@@ -53,7 +53,7 @@ $menu_url = $menu_url[0];
 				<nav class="main__menu">
 					<ul>
 						<li>
-							<a<?if($menu_url === '' || $menu_url === '/') {?> class="active"<?}?> href="/">
+							<a<?if($menu_url === '' || $menu_url === '/') {?> class="active"<?}?> href="<?if($menu_url === '' || $menu_url === '/') {?>#catalog<?} else {?>/<?}?>">
 								<span>Каталог</span>
 							</a>
 						</li>
