@@ -27,8 +27,7 @@ require '../phpmailer/src/SMTP.php';
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'admin@professional161.ru', // Your Email Address
-				//'email' => 'a.kolesnik@vector-tepla.ru', // Your Email Address
+				'email' => 'info@sk-slavyane.ru', // Your Email Address
 				'name' => 'Заявка с сайта dolcebambi.ru' // Your Name
 			);
 
